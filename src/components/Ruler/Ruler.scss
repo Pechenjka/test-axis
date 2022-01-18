@@ -1,0 +1,32 @@
+@import "./src/styles/variables";
+
+.ruler {
+  background-color: $backgroundColor;
+  padding: 8px 12px 12px;
+  border-radius: 10px;
+  &__container {
+    position: relative;
+    display: flex;
+    &:before {
+      content: "";
+      position: absolute;
+      border: 1px solid $colorSerif;
+      right: 0;
+      left: 22px;
+      top: 25%;
+      transform: translateY(-50%);
+    }
+    &:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid $colorSerif;
+      border-right: 2px solid $colorSerif;
+      position: absolute;
+      color: $colorSerif;
+      top: 25%;
+      right: 0;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}

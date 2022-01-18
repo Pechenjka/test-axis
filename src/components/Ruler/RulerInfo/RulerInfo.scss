@@ -1,0 +1,30 @@
+@import "./src/styles/variables";
+
+.rulerInfo {
+  &__container {
+    align-self: stretch;
+    width: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    font-size: 18px;
+    color: $colorNumRegular;
+    font-weight: normal;
+    &:nth-child(5n + 1) {
+      font-size: 22px;
+      font-weight: bold;
+      color: $colorNumBold;
+    }
+  }
+  &__serif {
+    align-self: center;
+    position: relative;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  &__num {
+    grid-row: 2/3;
+    align-self: center;
+    margin: 10px auto 0 auto;
+  }
+}
