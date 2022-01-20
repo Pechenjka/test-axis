@@ -1,1 +1,4 @@
-
+.wrapperEnterData {
+  display: flex;
+  align-items: flex-end;
+}

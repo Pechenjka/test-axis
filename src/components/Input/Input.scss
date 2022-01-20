@@ -1,0 +1,20 @@
+@import "./src/styles/variables";
+
+.form {
+  width: 15px;
+  font-size: 15px;
+  margin-bottom: 7px;
+  border: 1px solid $border;
+  &_edit {
+    width: 35px;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  &__input {
+    width: 100%;
+    &_error {
+      color: $colorTextError;
+      outline: none;
+    }
+  }
+}
